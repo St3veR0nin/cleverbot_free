@@ -8,7 +8,7 @@ To use this library, you will need the latest version of **pypeteer**, which you
 
 Once you have all the required packages, you're ready to use this simple library!
 
-##Example of making a requests and getting the response string:
+## Example of making a requests and getting the response string:
 
 ```python
 
