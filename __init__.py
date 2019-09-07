@@ -1,1 +1,1 @@
-name = "async-cleverbot-api-free"
+name = "cleverbot_aio_free"
