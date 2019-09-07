@@ -12,7 +12,7 @@ Once you have all the required packages, you're ready to use this simple library
 
 ```python
 
-from cleverbot_aio_free import CleverBot
+from cleverbot_aio_free.cbaio import CleverBot
 
 #Instantiate the class
 cb = CleverBot()
@@ -46,7 +46,7 @@ loop.run_until_complete(main())
 ## Simple example of a continous chat
 
 ```python
-from cleverbot_aio_free import CleverBot
+from cleverbot_aio_free.cbaio import CleverBot
 
 cb = CleverBot()
 
