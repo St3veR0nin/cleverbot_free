@@ -29,7 +29,7 @@ Subsequent calls to init () will not download anything.
 """
 After initialization you can send text to Cleverbot and recieve the text response in just one line...
 """
-    response = await cb.getResponse(text)
+    response = await cb.getResponse("Hello")
 
 #When you want to reset the chat, you can close the browser session with...
     await cb.close()
