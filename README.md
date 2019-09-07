@@ -17,21 +17,30 @@ from cleverbot-aio-free import CleverBot
 #Instantiate the class
 cb = CleverBot()
 
-#The first time you call init(), pypeteer will download the chromium browser, 
-#that is necessary to use this library.
-#This is done only one time, i suggest you call this function in a test script,
-#before using it in your programs
-#Subsequent calls to init () will not download anything.
-cb.init()
-
-#After initialization you can send text to Cleverbot and recieve the text response in just one line...
-text = "Hello"
-
-response = cb.getResponse(text)
+async def main():
+"""
+The first time you call init(), pypeteer will download the chromium browser, 
+that is necessary to use this library.
+This is done only one time, i suggest you call this function in a test script,
+before using it in your programs
+Subsequent calls to init () will not download anything.
+"""
+    await cb.init()
+"""
+After initialization you can send text to Cleverbot and recieve the text response in just one line...
+"""
+    response = await cb.getResponse(text)
 
 #When you want to reset the chat, you can close the browser session with...
-cb.close()
+    await cb.close()
 
+#If you're using python >= 3.7
+asyncio.run(main)
+"""
+with python <= 3.6 < 3.7
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+"""
 ```
 
 That's it! I hope this library will help lots of people build their chatbots.
