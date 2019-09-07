@@ -43,4 +43,28 @@ loop.run_until_complete(main())
 """
 ```
 
+## Simple example of a continous chat
+
+```python
+from cleverbot-aio-free import CleverBot
+
+cb = CleverBot()
+
+async def main():
+    await cb.init()
+    while(True):
+        text = input("Say something to CleverBot:")
+        if text.lower().find("end") != -1:
+            break
+        response = await cb.getResponse(text)
+        print(response)
+    await cb.close()
+
+asyncio.run(main())
+"""or
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+"""
+```
+
 That's it! I hope this library will help lots of people build their chatbots.
