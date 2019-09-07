@@ -1,4 +1,4 @@
-# cleverbot-aio-free
+# cleverbot_aio_free
 Free version of the Cleverbot API, that supports asyncio
 
 To use this library, you will need the latest version of **pypeteer**, which you can find at this link https://github.com/miyakogi/pyppeteer
