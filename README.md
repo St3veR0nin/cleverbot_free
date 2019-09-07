@@ -26,9 +26,9 @@ before using it in your programs
 Subsequent calls to init () will not download anything.
 """
     await cb.init()
-"""
-After initialization you can send text to Cleverbot and recieve the text response in just one line...
-"""
+
+#After initialization you can send text to Cleverbot and recieve the text response in just one line...
+
     response = await cb.getResponse("Hello")
     print(response)
 #When you want to reset the chat, you can close the browser session with...
