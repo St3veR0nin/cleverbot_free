@@ -1,6 +1,9 @@
 # cleverbot_free
 Free version of the Cleverbot API.
 
+To Download: ```pip install cleverbot-free --upgrade```
+
+
 ## Example of making a request and getting the response string:
 
 ```python
