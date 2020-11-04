@@ -21,6 +21,9 @@ class CleverBot:
         is called.
         """
         self.wd.get("https://www.cleverbot.com/") 
+
+        self.wd.find_element_by_xpath("/html/body/div[1]/div[2]/div[1]/div/div/form/input").click()
+        time.sleep(0.5)
         self.element =  self.wd.find_element_by_css_selector("#avatarform > input.stimulus")
 
 
