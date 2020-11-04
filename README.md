@@ -15,8 +15,8 @@ cb = CleverBot()
 
 def main():
 """
-The first time you call init(), selenium will download the chromium browser, 
-that is necessary to use this library.
+The first time you call init(), selenium will download the webdriver, 
+which is necessary to use this library.
 This is done only one time, i suggest you call this function in a test script,
 before using it in your programs
 Subsequent calls to init () will not download anything.
