@@ -14,20 +14,20 @@ from cleverbot_free.cbaio import CleverBot
 cb = CleverBot()
 
 def main():
-"""
-The first time you call init(), selenium will download the webdriver, 
-which is necessary to use this library.
-This is done only one time, i suggest you call this function in a test script,
-before using it in your programs
-Subsequent calls to init () will not download anything.
-"""
+    """
+    The first time you call init(), selenium will download the webdriver, 
+    which is necessary to use this library.
+    This is done only one time, i suggest you call this function in a test script,
+    before using it in your programs
+    Subsequent calls to init () will not download anything.
+    """
     cb.init()
-"""
-After initialization you can send text to Cleverbot and receive the text response in just one line...
-"""
+ 
+    #After initialization you can send text to Cleverbot and receive the text response in just one line...
+ 
     response = cb.getResponse("Hello")
     print(response)
-#When you want to reset the chat, you can close the browser session with...
+    #When you want to reset the chat, you can close the browser session with...
     cb.close()
 
 main()
