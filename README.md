@@ -30,7 +30,6 @@ After initialization you can send text to Cleverbot and receive the text respons
 #When you want to reset the chat, you can close the browser session with...
     cb.close()
 
-#If you're using python >= 3.7
 main()
 ```
 
