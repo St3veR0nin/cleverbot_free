@@ -7,7 +7,7 @@ class CleverBot:
 
     def __init__(self):
         """
-        Requirements: pyppeteer, asyncio and bs4
+        Requirements: selenium, asyncio and bs4
         """
         self.element = None
         options = Options()
@@ -29,7 +29,7 @@ class CleverBot:
 
     def getResponse(self, text):
         """
-        Send text to Cleverbot and recieve response
+        Send text to Cleverbot and receive response
         """
         self.element.send_keys(text)
         self.element.submit()
