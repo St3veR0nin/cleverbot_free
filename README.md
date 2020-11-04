@@ -23,7 +23,7 @@ Subsequent calls to init () will not download anything.
 """
     cb.init()
 """
-After initialization you can send text to Cleverbot and recieve the text response in just one line...
+After initialization you can send text to Cleverbot and receive the text response in just one line...
 """
     response = cb.getResponse("Hello")
     print(response)
